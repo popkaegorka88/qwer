@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой профиль | Меняй мир</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-nav">
+            <a href="index.html" class="nav-link">🏠 Главная</a>
+            <a href="register.html" class="nav-link">📝 Регистрация</a>
+            <a href="login.html" class="nav-link">🔐 Вход</a>
+            <a href="projects.html" class="nav-link">🌟 Проекты</a>
+            <a href="profile.html" class="nav-link active">👤 Профиль</a>
+        </div>
+
+        <div class="card">
+            <div class="profile-header">
+                <div class="avatar">Е</div>
+                <div>
+                    <h3 style="margin:0; color: #e88b6b;">Григорьев Егор</h3>
+                    <p>+7 900 123-45-67 • участник с 2025</p>
+                </div>
+            </div>
+            <button class="btn-outline" style="margin-right: 12px;" onclick="alert('Редактирование профиля')">Редактировать профиль</button>
+            <button class="btn-outline" onclick="alert('Настройки')">Настройки</button>
+        </div>
+
+
+        <div class="card">
+            <h2>📂 Мои проекты (созданные мной)</h2>
+            <div class="project-card" style="background:#fff5f0;">
+                <strong>🌿 Эко-двор</strong> – создание зоны раздельного сбора<br>
+                <span style="font-size:13px; color:#e88b6b;">статус: активен</span>
+                <div style="margin-top: 12px;"><button class="btn-secondary" style="padding: 6px 16px; font-size: 13px;">Редактировать</button></div>
+            </div>
+            <div class="project-card">
+                <strong>📖 Читаем детям</strong> – литературные вечера в школах<br>
+                <span style="font-size:13px;">ждут волонтёры</span>
+                <div style="margin-top: 12px;"><button class="btn-secondary" style="padding: 6px 16px; font-size: 13px;">Редактировать</button></div>
+            </div>
+            <button class="btn" style="margin-top: 20px; width:100%;" onclick="alert('Форма создания нового проекта')">➕ Создать новый проект</button>
+        </div>
+
+        <div class="card">
+            <h2>❤️ Проекты, в которых я участвую</h2>
+            <div class="project-grid">
+                <div class="project-card"><strong>🏠 Помощь приютам</strong> – координатор кормов</div>
+                <div class="project-card"><strong>💻 IT-волонтёр</strong> – помощь сайтам НКО</div>
+                <div class="project-card"><strong>🌊 Уборка парков</strong> – организатор мероприятий</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📊 Моя статистика</h2>
+            <p>✅ Участий в проектах: <strong>8</strong></p>
+            <p>🌟 Созданных проектов: <strong>2</strong></p>
+            <p>💬 Часы волонтёрства: <strong>124</strong></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 ВКонтакте. Сделано с <a href="#">для сообщества</a> 🤍
+    </div>
+</body>
+</html>

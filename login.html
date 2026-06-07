@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход | Меняй мир</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-nav">
+            <a href="index.html" class="nav-link">🏠 Главная</a>
+            <a href="register.html" class="nav-link">📝 Регистрация</a>
+            <a href="login.html" class="nav-link active">🔐 Вход</a>
+            <a href="projects.html" class="nav-link">🌟 Проекты</a>
+            <a href="profile.html" class="nav-link">👤 Профиль</a>
+        </div>
+
+        <div class="card">
+            <h2>🔐 Вход в аккаунт</h2>
+            <div class="input-group">
+                <label>Телефон или email</label>
+                <input type="text" placeholder="+7 900 123-45-67" id="loginUser">
+            </div>
+            <div class="input-group">
+                <label>Пароль</label>
+                <input type="password" placeholder="••••••" id="loginPass">
+            </div>
+            <a href="profile.html" class="btn" style="width: 100%; text-align: center; display: block;">Войти</a>
+        </div>
+
+        <div class="card">
+            <h3>Войти через соцсети</h3>
+            <div class="social-grid">
+                <button class="social-btn" onclick="alert('Вход через Google')">Google</button>
+                <button class="social-btn" onclick="alert('Вход через GitHub')">GitHub</button>
+                <button class="social-btn" onclick="alert('Вход через TikTok')">TikTok</button>
+                <button class="social-btn" onclick="alert('Вход через VK')">VK</button>
+                <button class="social-btn" onclick="alert('Вход через WhatsApp')">WhatsApp</button>
+            </div>
+            <p style="margin-top: 20px; text-align: center; font-size: 14px;">Нет аккаунта? 
+                <a href="register.html" style="color: #e88b6b; text-decoration: none; font-weight: 600;">Создать</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 ВКонтакте. Сделано с <a href="#">для сообщества</a> 🤍
+    </div>
+</body>
+</html>

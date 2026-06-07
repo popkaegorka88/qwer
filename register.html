@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация | Меняй мир</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-nav">
+            <a href="index.html" class="nav-link">🏠 Главная</a>
+            <a href="register.html" class="nav-link active">📝 Регистрация</a>
+            <a href="login.html" class="nav-link">🔐 Вход</a>
+            <a href="projects.html" class="nav-link">🌟 Проекты</a>
+            <a href="profile.html" class="nav-link">👤 Профиль</a>
+        </div>
+
+        <div class="card">
+            <h2>📝 Регистрация нового участника</h2>
+            <div class="input-group">
+                <label>Имя</label>
+                <input type="text" placeholder="Егор" id="regName">
+            </div>
+            <div class="input-group">
+                <label>Отчество</label>
+                <input type="text" placeholder="Юрьевич" id="regPatronymic">
+            </div>
+            <div class="input-group">
+                <label>Номер телефона</label>
+                <input type="tel" placeholder="+7 900 123-45-67" id="regPhone">
+            </div>
+            <div class="input-group">
+                <label>Пароль</label>
+                <input type="password" placeholder="••••••" id="regPassword">
+            </div>
+            <a href="profile.html" class="btn" style="width: 100%; text-align: center; display: block;" onclick="localStorage.setItem('userName', document.getElementById('regName').value)">Зарегистрироваться</a>
+            <p style="margin-top: 20px; text-align: center;">Уже зарегистрированы? 
+                <a href="login.html" style="color: #e88b6b; text-decoration: none; font-weight: 600;">Войти</a>
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Войти с соцсетями</h3>
+            <div class="social-grid">
+                <button class="social-btn" onclick="alert('Вход через Google')">Google</button>
+                <button class="social-btn" onclick="alert('Вход через GitHub')">GitHub</button>
+                <button class="social-btn" onclick="alert('Вход через VK')">VK</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 ВКонтакте. Сделано с <a href="#">для сообщества</a> 🤍
+    </div>
+</body>
+</html>
